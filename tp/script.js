@@ -1,3 +1,11 @@
+let today = new Date().format('d-m-y');
+let yesterday = new Date(+new Date() - 86400000).format('d-m-y');
+let tomorrow = new Date(+new Date() + 86400000).format('d-m-y');
+document.getElementById("today").innerHTML = data[today];
+document.getElementById("tomorrow").innerHTML = data[tomorrow];
+document.getElementById("yesterday").innerHTML = data[yesterday] ;
 
-document.getElementById("today").innerHTML = data[new Date().format('d-m-y')];
-document.getElementById("tomorrow").innerHTML = data[new Date(+new Date() + 86400000).format('d-m-y')];
+document.getElementById("todayDate").innerHTML = "["+today+"]";
+document.getElementById("tomorrowDate").innerHTML = "["+tomorrow+"]";
+document.getElementById("yesterdayDate").innerHTML = "["+yesterday+"]" ;
+
